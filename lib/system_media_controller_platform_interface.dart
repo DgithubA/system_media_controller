@@ -32,6 +32,10 @@ abstract class SystemMediaControllerPlatform extends PlatformInterface {
     throw UnimplementedError('pause() has not been implemented.');
   }
 
+  Future<bool> playPause() {
+    throw UnimplementedError('playPause() has not been implemented.');
+  }
+
   Future<bool> skipNext() {
     throw UnimplementedError('skipNext() has not been implemented.');
   }

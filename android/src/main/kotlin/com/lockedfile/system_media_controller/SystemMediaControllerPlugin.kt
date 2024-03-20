@@ -38,6 +38,10 @@ class SystemMediaControllerPlugin: FlutterPlugin, MethodCallHandler {
       sendMediaButton(KeyEvent.KEYCODE_MEDIA_PLAY)
       result.success("Success");
     }
+    else if (call.method == "playPause") {
+      sendMediaButton(KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE)
+      result.success("Success");
+    }
     else if (call.method == "skipNext") {
       sendMediaButton(KeyEvent.KEYCODE_MEDIA_NEXT)
       result.success("Success");

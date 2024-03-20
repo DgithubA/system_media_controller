@@ -9,6 +9,10 @@ class SystemMediaController {
     return SystemMediaControllerPlatform.instance.pause();
   }
 
+  Future<bool> playPause() {
+    return SystemMediaControllerPlatform.instance.playPause();
+  }
+
   Future<bool> skipNext() {
     return SystemMediaControllerPlatform.instance.skipNext();
   }

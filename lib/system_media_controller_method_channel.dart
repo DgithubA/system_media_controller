@@ -21,6 +21,9 @@ class MethodChannelSystemMediaController extends SystemMediaControllerPlatform {
   Future<bool> pause() async => invokeMethod('pause');
 
   @override
+  Future<bool> playPause() async => invokeMethod('playPause');
+
+  @override
   Future<bool> skipNext() async => invokeMethod('skipNext');
 
   @override
